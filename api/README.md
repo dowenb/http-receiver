@@ -30,7 +30,7 @@ Note: Depending on your installation of python this may be pip3
 
 ### Run docker
 
-docker run -d --name http-receiver -p 80:80 http-receiver
+`docker run -d --name http-receiver -p 8000:80 http-receiver`
 
 ## Docker stop
 

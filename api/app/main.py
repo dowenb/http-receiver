@@ -53,7 +53,7 @@ async def get_items():
     return {"item count": len(items)}
 
 
-@app.get('/{item_id}')
+@app.get('/item/{item_id}')
 async def get_item(item_id: int):
     try:
         return {"item": items[item_id]}
@@ -67,7 +67,7 @@ async def pop_item():
 
 
 @app.get('/first')
-async def first_tem():
+async def first_item():
     try:
         return {"item": items[0]}
     except IndexError:
