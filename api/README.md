@@ -35,3 +35,23 @@ Note: Depending on your installation of python this may be pip3
 ## Docker stop
 
 `docker stop http-receiver`
+
+## Some examples
+
+Examples using httpie
+
+```
+http post localhost:8000 message="The first message"
+
+http post localhost:8000 message="Another message"
+
+http post localhost:8000 message="Last message"
+
+http get localhost:8000/
+
+http get localhost:8000/first
+
+http get localhost:8000/last
+
+http get localhost:8000/item/1
+```
